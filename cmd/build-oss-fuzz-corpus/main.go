@@ -17,7 +17,6 @@ import (
 	"log"
 	"os"
 	"path"
-	"path/filepath"
 
 	"github.com/BlackMocca/mongo-go-driver/bson"
 )
@@ -150,28 +149,39 @@ func seedBSONCorpus(zw *zip.Writer) {
 
 // main packs the local corpus as <fuzzer_name>_seed_corpus.zip, which is used by OSS-Fuzz to seed remote fuzzing
 // of the MongoDB Go Driver. See here for more details: https://google.github.io/oss-fuzz/architecture/
+// func main() {
+// 	seedCorpus := os.Args[1]
+// 	if filepath.Ext(seedCorpus) != ".zip" {
+// 		log.Fatalf("expected zip file <corpus>.zip, got %s", seedCorpus)
+// 	}
+
+// 	zipFile, err := os.Create(seedCorpus)
+// 	if err != nil {
+// 		log.Fatalf("failed creating zip file: %v", err)
+// 	}
+
+// 	defer func() {
+// 		err := zipFile.Close()
+// 		if err != nil {
+// 			log.Fatalf("failed to close zip file: %v", err)
+// 		}
+// 	}()
+
+// 	zipWriter := zip.NewWriter(zipFile)
+// 	seedBSONCorpus(zipWriter)
+
+// 	if err := zipWriter.Close(); err != nil {
+// 		log.Fatalf("failed to close zip writer: %v", err)
+// 	}
+// }
+
 func main() {
-	seedCorpus := os.Args[1]
-	if filepath.Ext(seedCorpus) != ".zip" {
-		log.Fatalf("expected zip file <corpus>.zip, got %s", seedCorpus)
-	}
+	bu, _ := ioutil.ReadFile("./site.json")
 
-	zipFile, err := os.Create(seedCorpus)
+	var cmds []bson.D
+	err := bson.UnmarshalExtJSON(bu, true, &cmds)
 	if err != nil {
-		log.Fatalf("failed creating zip file: %v", err)
+		fmt.Println(err)
 	}
-
-	defer func() {
-		err := zipFile.Close()
-		if err != nil {
-			log.Fatalf("failed to close zip file: %v", err)
-		}
-	}()
-
-	zipWriter := zip.NewWriter(zipFile)
-	seedBSONCorpus(zipWriter)
-
-	if err := zipWriter.Close(); err != nil {
-		log.Fatalf("failed to close zip writer: %v", err)
-	}
+	fmt.Println(cmds)
 }
