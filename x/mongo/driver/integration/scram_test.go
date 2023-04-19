@@ -12,13 +12,13 @@ import (
 	"os"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/internal/testutil"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsontype"
+	"github.com/BlackMocca/mongo-go-driver/internal/testutil"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/mongo/writeconcern"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
 )
 
 type scramTestCase struct {

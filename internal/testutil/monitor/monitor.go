@@ -11,7 +11,7 @@ package monitor
 import (
 	"sync"
 
-	"go.mongodb.org/mongo-driver/event"
+	"github.com/BlackMocca/mongo-go-driver/event"
 )
 
 // TestPoolMonitor exposes an *event.TestPoolMonitor and collects all events logged to that

@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/require"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/mongo/writeconcern"
 )
 
 func TestWriteConcernWithOptions(t *testing.T) {

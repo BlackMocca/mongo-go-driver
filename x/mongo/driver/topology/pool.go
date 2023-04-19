@@ -14,11 +14,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/internal/logger"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/event"
+	"github.com/BlackMocca/mongo-go-driver/internal/logger"
+	"github.com/BlackMocca/mongo-go-driver/mongo/address"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
 )
 
 // Connection pool state constants.

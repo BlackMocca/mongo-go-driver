@@ -14,9 +14,9 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/mongo/address"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/operation"
 )
 
 func TestPool(t *testing.T) {

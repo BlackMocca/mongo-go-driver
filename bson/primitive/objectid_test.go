@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
 )
 
 func TestString(t *testing.T) {

@@ -14,8 +14,8 @@ import (
 	"log"
 	"sync"
 
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/mongo"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
 )
 
 type CustomLogger struct {

@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"sync"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/internal/logger"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/internal/logger"
 )
 
 // errLoggerVerification is use to wrap errors associated with validating the

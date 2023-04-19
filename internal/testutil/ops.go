@@ -4,20 +4,20 @@
 // not use this file except in compliance with the License. You may obtain
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-package testutil // import "go.mongodb.org/mongo-driver/internal/testutil"
+package testutil // import "github.com/BlackMocca/mongo-go-driver/internal/testutil"
 
 import (
 	"context"
 	"os"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/require"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/mongo/writeconcern"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/operation"
 )
 
 // DropCollection drops the collection in the test cluster.

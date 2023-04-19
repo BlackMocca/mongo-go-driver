@@ -9,8 +9,8 @@ package tag
 import (
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
 )
 
 func TestTag_String(t *testing.T) {

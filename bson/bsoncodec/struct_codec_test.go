@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
 )
 
 func TestZeoerInterfaceUsedByDecoder(t *testing.T) {

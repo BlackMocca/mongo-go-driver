@@ -14,7 +14,7 @@ import (
 	"reflect"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/aws/awserr"
+	"github.com/BlackMocca/mongo-go-driver/internal/aws/awserr"
 )
 
 type secondStubProvider struct {

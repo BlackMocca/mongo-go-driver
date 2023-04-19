@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
 	"golang.org/x/crypto/ocsp"
 )
 

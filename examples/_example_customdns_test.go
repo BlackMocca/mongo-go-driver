@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/mongo"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
 	"github.com/miekg/dns"
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func resolve(ctx context.Context, cache *dnsCache, in *dns.Conn, out *dns.Conn) {

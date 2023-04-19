@@ -9,9 +9,9 @@ package bsonrw
 import (
 	"testing"
 
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsontype"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 type VRWInvoked byte

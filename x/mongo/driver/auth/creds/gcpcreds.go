@@ -14,8 +14,8 @@ import (
 	"net/http"
 	"os"
 
-	"go.mongodb.org/mongo-driver/internal"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/internal"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 // GCPCredentialProvider provides GCP credentials.

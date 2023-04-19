@@ -16,8 +16,8 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal"
-	"go.mongodb.org/mongo-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
 )
 
 func TestContactResponders(t *testing.T) {

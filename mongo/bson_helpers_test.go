@@ -9,8 +9,8 @@ package mongo
 import (
 	"testing"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
 )
 
 // compare expected and actual BSON documents. comparison succeeds if actual contains each element in expected.

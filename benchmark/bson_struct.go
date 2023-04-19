@@ -10,7 +10,7 @@ import (
 	"context"
 	"errors"
 
-	"go.mongodb.org/mongo-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/bson"
 )
 
 func BSONFlatStructDecoding(_ context.Context, tm TimerManager, iters int) error {

@@ -9,7 +9,7 @@ package unified
 import (
 	"strings"
 
-	"go.mongodb.org/mongo-driver/event"
+	"github.com/BlackMocca/mongo-go-driver/event"
 )
 
 type monitoringEventType string

@@ -9,8 +9,8 @@ package bsoncore
 import (
 	"testing"
 
+	"github.com/BlackMocca/mongo-go-driver/bson/bsontype"
 	"github.com/google/go-cmp/cmp"
-	"go.mongodb.org/mongo-driver/bson/bsontype"
 )
 
 func TestElement(t *testing.T) {

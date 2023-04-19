@@ -10,7 +10,7 @@ import (
 	"context"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
 )
 
 // ConnectionError represents a connection error.

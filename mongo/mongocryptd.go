@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readconcern"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readpref"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 const (

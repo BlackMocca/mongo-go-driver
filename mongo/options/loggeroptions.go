@@ -7,7 +7,7 @@
 package options
 
 import (
-	"go.mongodb.org/mongo-driver/internal/logger"
+	"github.com/BlackMocca/mongo-go-driver/internal/logger"
 )
 
 // LogLevel is an enumeration representing the supported log severity levels.

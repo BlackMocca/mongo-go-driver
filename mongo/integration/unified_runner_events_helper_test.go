@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/internal/testutil/helpers"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/integration/mtest"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/topology"
+	"github.com/BlackMocca/mongo-go-driver/event"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/testutil/helpers"
+	"github.com/BlackMocca/mongo-go-driver/mongo/address"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/mongo/integration/mtest"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readpref"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/topology"
 )
 
 // Helper functions for the operations in the unified spec test runner that require assertions about SDAM and connection

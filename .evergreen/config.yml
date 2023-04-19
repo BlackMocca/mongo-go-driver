@@ -30,11 +30,11 @@ functions:
     - command: git.get_project
       type: system
       params:
-        directory: src/go.mongodb.org/mongo-driver
+        directory: src/github.com/BlackMocca/mongo-go-driver
     # Make an evergreen expansion file with dynamic values
     - command: shell.exec
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           set -o errexit
 
@@ -148,7 +148,7 @@ functions:
     # Load the expansion file to make an evergreen variable with the current unique version
     - command: expansions.update
       params:
-        file: src/go.mongodb.org/mongo-driver/expansion.yml
+        file: src/github.com/BlackMocca/mongo-go-driver/expansion.yml
 
   prepare-resources:
     - command: shell.exec
@@ -165,7 +165,7 @@ functions:
           echo "{ \"releases\": { \"default\": \"$MONGODB_BINARIES\" }}" > $MONGO_ORCHESTRATION_HOME/orchestration.config
     - command: shell.exec
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
 
@@ -174,7 +174,7 @@ functions:
           git submodule update
     - command: shell.exec
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         shell: "bash"
         script: |
           . ${DRIVERS_TOOLS}/.evergreen/venv-utils.sh
@@ -187,12 +187,12 @@ functions:
     # Load the expansion file to make an evergreen variable with the current unique version
     - command: expansions.update
       params:
-        file: src/go.mongodb.org/mongo-driver/expansion.yml
+        file: src/github.com/BlackMocca/mongo-go-driver/expansion.yml
 
   install-linters:
     - command: shell.exec
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
 
@@ -329,7 +329,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
           ${BUILD_ENV|} make ${targets} BUILD_TAGS="-tags \"cse gssapi\""
@@ -338,7 +338,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         add_expansions_to_env: true
         script: |
           ${PREPARE_SHELL}
@@ -347,13 +347,13 @@ functions:
   send-perf-data:
     - command: perf.send
       params:
-        file: src/go.mongodb.org/mongo-driver/perf.json
+        file: src/github.com/BlackMocca/mongo-go-driver/perf.json
 
   run-enterprise-auth-tests:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           # DO NOT ECHO WITH XTRACE
           if [ "Windows_NT" = "$OS" ]; then
@@ -376,7 +376,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           # DO NOT ECHO WITH XTRACE
           if [ "Windows_NT" = "$OS" ]; then
@@ -405,7 +405,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           # DO NOT ECHO WITH XTRACE
           if [ "Windows_NT" = "$OS" ]; then
@@ -434,7 +434,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           # DO NOT ECHO WITH XTRACE
           if [ "Windows_NT" = "$OS" ]; then
@@ -466,7 +466,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
           export MONGO_GO_DRIVER_CA_FILE="$DRIVERS_TOOLS/.evergreen/ocsp/${OCSP_ALGORITHM}/ca.pem"
@@ -485,7 +485,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
 
@@ -548,7 +548,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
 
@@ -593,7 +593,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         add_expansions_to_env: true
         script: |
           ${PREPARE_SHELL}
@@ -611,7 +611,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
           AUTH="auth" \
@@ -876,7 +876,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
           if [ "${SKIP_ECS_AUTH_TEST}" = "true" ]; then
@@ -1044,7 +1044,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
           export KMS_TLS_TESTCASE="${KMS_TLS_TESTCASE}"
@@ -1071,7 +1071,7 @@ functions:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         script: |
           ${PREPARE_SHELL}
           export KMS_MOCK_SERVERS_RUNNING="true"
@@ -1116,7 +1116,7 @@ post:
   - command: gotest.parse_files
     params:
       files:
-        - "src/go.mongodb.org/mongo-driver/*.suite"
+        - "src/github.com/BlackMocca/mongo-go-driver/*.suite"
   - func: upload-mo-artifacts
   - func: stop-load-balancer
   - func: cleanup
@@ -2045,7 +2045,7 @@ tasks:
     - command: shell.exec
       type: setup
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         shell: "bash"
         script: |
           ${PREPARE_SHELL}
@@ -2071,7 +2071,7 @@ tasks:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         shell: "bash"
         script: |
           ${PREPARE_SHELL}
@@ -2088,7 +2088,7 @@ tasks:
       - command: shell.exec
         type: test
         params:
-          working_dir: src/go.mongodb.org/mongo-driver
+          working_dir: src/github.com/BlackMocca/mongo-go-driver
           shell: "bash"
           script: |
             ${PREPARE_SHELL}
@@ -2107,7 +2107,7 @@ tasks:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         shell: "bash"
         script: |
           ${PREPARE_SHELL}
@@ -2131,7 +2131,7 @@ tasks:
     - command: shell.exec
       type: test
       params:
-        working_dir: src/go.mongodb.org/mongo-driver
+        working_dir: src/github.com/BlackMocca/mongo-go-driver
         shell: "bash"
         script: |
           ${PREPARE_SHELL}
@@ -2363,7 +2363,7 @@ task_groups:
       - command: gotest.parse_files
         params:
           files:
-            - "src/go.mongodb.org/mongo-driver/*.suite"
+            - "src/github.com/BlackMocca/mongo-go-driver/*.suite"
       - command: s3.put
         params:
           aws_key: ${aws_key}

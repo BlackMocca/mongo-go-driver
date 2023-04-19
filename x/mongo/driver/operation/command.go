@@ -11,14 +11,14 @@ import (
 	"errors"
 	"time"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/internal/logger"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/BlackMocca/mongo-go-driver/event"
+	"github.com/BlackMocca/mongo-go-driver/internal/logger"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readconcern"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readpref"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/session"
 )
 
 // Command is used to run a generic operation.

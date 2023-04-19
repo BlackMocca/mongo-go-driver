@@ -15,9 +15,9 @@ import (
 	"net"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/auth"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/mongo/address"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/auth"
 )
 
 func TestConnectionErrors(t *testing.T) {

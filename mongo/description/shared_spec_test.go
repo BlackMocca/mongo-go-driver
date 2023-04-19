@@ -14,10 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/require"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/tag"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/mongo/address"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readpref"
+	"github.com/BlackMocca/mongo-go-driver/tag"
 )
 
 type testCase struct {

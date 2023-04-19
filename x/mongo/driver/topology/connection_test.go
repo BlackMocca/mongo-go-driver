@@ -17,14 +17,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/BlackMocca/mongo-go-driver/internal"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/testutil/helpers"
+	"github.com/BlackMocca/mongo-go-driver/mongo/address"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/wiremessage"
 	"github.com/google/go-cmp/cmp"
-	"go.mongodb.org/mongo-driver/internal"
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/internal/testutil/helpers"
-	"go.mongodb.org/mongo-driver/mongo/address"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage"
 )
 
 type testHandshaker struct {

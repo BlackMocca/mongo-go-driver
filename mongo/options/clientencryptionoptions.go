@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"go.mongodb.org/mongo-driver/internal"
+	"github.com/BlackMocca/mongo-go-driver/internal"
 )
 
 // ClientEncryptionOptions represents all possible options used to configure a ClientEncryption instance.

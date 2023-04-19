@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/operation"
 	"github.com/montanaflynn/stats"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
 )
 
 const (

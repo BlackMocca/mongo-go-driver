@@ -12,11 +12,11 @@ import (
 	"strings"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/integration/mtest"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/mongo"
+	"github.com/BlackMocca/mongo-go-driver/mongo/integration/mtest"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/session"
 )
 
 var waitForEventTimeout = 10 * time.Second

@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/internal/require"
-	"go.mongodb.org/mongo-driver/tag"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/tag"
 )
 
 func TestPrimary(t *testing.T) {

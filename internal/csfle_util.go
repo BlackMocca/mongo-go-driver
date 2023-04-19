@@ -9,7 +9,7 @@ package internal
 import (
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 const (

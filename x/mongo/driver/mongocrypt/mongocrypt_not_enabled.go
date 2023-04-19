@@ -12,8 +12,8 @@ package mongocrypt
 import (
 	"context"
 
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/mongocrypt/options"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/mongocrypt/options"
 )
 
 const cseNotSupportedMsg = "client-side encryption not enabled. add the cse build tag to support"

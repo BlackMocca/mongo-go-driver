@@ -9,8 +9,8 @@ package topology
 import (
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
 )
 
 func TestDiffHostList(t *testing.T) {

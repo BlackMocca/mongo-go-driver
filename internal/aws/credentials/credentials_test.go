@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/aws/awserr"
+	"github.com/BlackMocca/mongo-go-driver/internal/aws/awserr"
 )
 
 func isExpired(c *Credentials) bool {

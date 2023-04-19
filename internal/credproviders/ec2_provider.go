@@ -15,7 +15,7 @@ import (
 	"net/http"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/aws/credentials"
+	"github.com/BlackMocca/mongo-go-driver/internal/aws/credentials"
 )
 
 const (

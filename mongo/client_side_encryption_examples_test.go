@@ -13,9 +13,9 @@ import (
 	"fmt"
 	"log"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
 )
 
 func Example_clientSideEncryption() {

@@ -10,8 +10,8 @@ import (
 	"os"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/wiremessage"
 )
 
 func TestCompression(t *testing.T) {

@@ -2,11 +2,11 @@ module go.mongodb.go/mongo-driver/examples/logger/zap
 
 go 1.19
 
-replace go.mongodb.org/mongo-driver => ../../../
+replace github.com/BlackMocca/mongo-go-driver => ../../../
 
 require (
 	github.com/go-logr/zapr v1.2.3
-	go.mongodb.org/mongo-driver v1.11.1
+	github.com/BlackMocca/mongo-go-driver v1.11.1
 	go.uber.org/zap v1.24.0
 )
 

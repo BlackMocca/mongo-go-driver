@@ -13,15 +13,15 @@ import (
 	"strings"
 	"time"
 
-	"go.mongodb.org/mongo-driver/event"
-	"go.mongodb.org/mongo-driver/internal/logger"
-	"go.mongodb.org/mongo-driver/mongo/description"
-	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/x/mongo/driver"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/auth"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/ocsp"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/operation"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/session"
+	"github.com/BlackMocca/mongo-go-driver/event"
+	"github.com/BlackMocca/mongo-go-driver/internal/logger"
+	"github.com/BlackMocca/mongo-go-driver/mongo/description"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/auth"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/ocsp"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/operation"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/session"
 )
 
 const defaultServerSelectionTimeout = 30 * time.Second

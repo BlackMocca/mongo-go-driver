@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson/bsontype"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsontype"
 )
 
 const maxNestingDepth = 200

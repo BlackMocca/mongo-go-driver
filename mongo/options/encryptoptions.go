@@ -7,8 +7,8 @@
 package options
 
 import (
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
 )
 
 // These constants specify valid values for QueryType

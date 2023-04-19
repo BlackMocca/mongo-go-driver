@@ -9,7 +9,7 @@ package mongo
 import (
 	"testing"
 
-	"go.mongodb.org/mongo-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
 )
 
 func TestChangeStream(t *testing.T) {

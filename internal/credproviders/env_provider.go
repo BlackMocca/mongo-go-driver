@@ -9,7 +9,7 @@ package credproviders
 import (
 	"os"
 
-	"go.mongodb.org/mongo-driver/internal/aws/credentials"
+	"github.com/BlackMocca/mongo-go-driver/internal/aws/credentials"
 )
 
 // envProviderName provides a name of Env provider

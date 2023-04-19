@@ -9,8 +9,8 @@ package options
 import (
 	"time"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
 )
 
 // ChangeStreamOptions represents options that can be used to configure a Watch operation.

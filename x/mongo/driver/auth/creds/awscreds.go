@@ -11,9 +11,9 @@ import (
 	"net/http"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/aws/credentials"
-	"go.mongodb.org/mongo-driver/internal/credproviders"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/internal/aws/credentials"
+	"github.com/BlackMocca/mongo-go-driver/internal/credproviders"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 const (

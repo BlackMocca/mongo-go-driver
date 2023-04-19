@@ -16,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/internal/require"
-	"go.mongodb.org/mongo-driver/internal/testutil/helpers"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/internal/testutil/helpers"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/connstring"
 )
 
 type host struct {

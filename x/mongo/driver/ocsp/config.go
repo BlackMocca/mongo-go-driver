@@ -12,7 +12,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"go.mongodb.org/mongo-driver/internal"
+	"github.com/BlackMocca/mongo-go-driver/internal"
 	"golang.org/x/crypto/ocsp"
 )
 

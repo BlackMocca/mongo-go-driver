@@ -10,11 +10,11 @@ import (
 	"reflect"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/bson/bsonoptions"
-	"go.mongodb.org/mongo-driver/bson/bsonrw/bsonrwtest"
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/internal/assert"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsonoptions"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsonrw/bsonrwtest"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsontype"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/internal/assert"
 )
 
 func TestStringCodec(t *testing.T) {

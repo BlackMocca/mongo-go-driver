@@ -2,12 +2,12 @@ module go.mongodb.go/mongo-driver/examples/logger/logrus
 
 go 1.19
 
-replace go.mongodb.org/mongo-driver => ../../../
+replace github.com/BlackMocca/mongo-go-driver => ../../../
 
 require (
 	github.com/bombsimon/logrusr/v4 v4.0.0
 	github.com/sirupsen/logrus v1.9.0
-	go.mongodb.org/mongo-driver v1.11.1
+	github.com/BlackMocca/mongo-go-driver v1.11.1
 )
 
 require (

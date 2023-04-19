@@ -10,10 +10,10 @@ import (
 	"context"
 	"fmt"
 
-	"go.mongodb.org/mongo-driver/bson"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/connstring"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/topology"
+	"github.com/BlackMocca/mongo-go-driver/bson"
+	"github.com/BlackMocca/mongo-go-driver/mongo"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/connstring"
+	"github.com/BlackMocca/mongo-go-driver/x/mongo/driver/topology"
 )
 
 // AuthEnabled returns whether or not the cluster requires auth.

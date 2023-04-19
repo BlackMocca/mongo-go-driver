@@ -13,7 +13,7 @@ import (
 	"reflect"
 	"testing"
 
-	"go.mongodb.org/mongo-driver/bson/primitive"
+	"github.com/BlackMocca/mongo-go-driver/bson/primitive"
 )
 
 func TestDocumentBuilder(t *testing.T) {

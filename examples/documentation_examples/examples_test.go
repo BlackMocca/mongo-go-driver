@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"go.mongodb.org/mongo-driver/examples/documentation_examples"
-	"go.mongodb.org/mongo-driver/internal/require"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/integration/mtest"
-	"go.mongodb.org/mongo-driver/mongo/options"
+	"github.com/BlackMocca/mongo-go-driver/examples/documentation_examples"
+	"github.com/BlackMocca/mongo-go-driver/internal/require"
+	"github.com/BlackMocca/mongo-go-driver/mongo"
+	"github.com/BlackMocca/mongo-go-driver/mongo/integration/mtest"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
 )
 
 func TestMain(m *testing.M) {

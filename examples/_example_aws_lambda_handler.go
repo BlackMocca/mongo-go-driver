@@ -10,9 +10,9 @@ import (
 	"context"
 	"os"
 
+	"github.com/BlackMocca/mongo-go-driver/mongo"
+	"github.com/BlackMocca/mongo-go-driver/mongo/options"
 	runtime "github.com/aws/aws-lambda-go/lambda"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 // Start AWS Lambda Example 1

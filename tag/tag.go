@@ -5,7 +5,7 @@
 // a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
 // Package tag provides a way to define filters for tagged servers.
-package tag // import "go.mongodb.org/mongo-driver/tag"
+package tag // import "github.com/BlackMocca/mongo-go-driver/tag"
 
 import (
 	"bytes"

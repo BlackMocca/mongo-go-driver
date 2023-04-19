@@ -8,11 +8,11 @@
 //
 // For more information about MongoDB read concerns, see
 // https://www.mongodb.com/docs/manual/reference/read-concern/
-package readconcern // import "go.mongodb.org/mongo-driver/mongo/readconcern"
+package readconcern // import "github.com/BlackMocca/mongo-go-driver/mongo/readconcern"
 
 import (
-	"go.mongodb.org/mongo-driver/bson/bsontype"
-	"go.mongodb.org/mongo-driver/x/bsonx/bsoncore"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsontype"
+	"github.com/BlackMocca/mongo-go-driver/x/bsonx/bsoncore"
 )
 
 // A ReadConcern defines a MongoDB read concern, which allows you to control the consistency and

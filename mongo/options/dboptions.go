@@ -7,10 +7,10 @@
 package options
 
 import (
-	"go.mongodb.org/mongo-driver/bson/bsoncodec"
-	"go.mongodb.org/mongo-driver/mongo/readconcern"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
-	"go.mongodb.org/mongo-driver/mongo/writeconcern"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsoncodec"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readconcern"
+	"github.com/BlackMocca/mongo-go-driver/mongo/readpref"
+	"github.com/BlackMocca/mongo-go-driver/mongo/writeconcern"
 )
 
 // DatabaseOptions represents options that can be used to configure a Database.

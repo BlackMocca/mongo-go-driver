@@ -11,7 +11,7 @@
 package credentials
 
 import (
-	"go.mongodb.org/mongo-driver/internal/aws/awserr"
+	"github.com/BlackMocca/mongo-go-driver/internal/aws/awserr"
 )
 
 // A ChainProvider will search for a provider which returns credentials

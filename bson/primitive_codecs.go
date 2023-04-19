@@ -10,8 +10,8 @@ import (
 	"errors"
 	"reflect"
 
-	"go.mongodb.org/mongo-driver/bson/bsoncodec"
-	"go.mongodb.org/mongo-driver/bson/bsonrw"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsoncodec"
+	"github.com/BlackMocca/mongo-go-driver/bson/bsonrw"
 )
 
 var tRawValue = reflect.TypeOf(RawValue{})
