@@ -124,6 +124,7 @@ func TestExtJSONParserPeekType(t *testing.T) {
 		makeValidPeekTypeTestCase(`{"$numberDouble": "NaN"}`, bsontype.Double, "Double--NaN"),
 		makeValidPeekTypeTestCase(`{"$numberDecimal": "1234"}`, bsontype.Decimal128, "Decimal"),
 		makeValidPeekTypeTestCase(`{"foo": "bar"}`, bsontype.EmbeddedDocument, "Toplevel document"),
+		makeValidPeekTypeTestCase(`{"$date": "2023-04-20T17:59:22.000Z"}`, bsontype.DateTime, "Datetime"),
 		makeValidPeekTypeTestCase(`{"$date": {"$numberLong": "0"}}`, bsontype.DateTime, "Datetime"),
 		makeValidPeekTypeTestCase(`{"$code": "function() {}"}`, bsontype.JavaScript, "Code no scope"),
 		makeValidPeekTypeTestCase(`[{"$numberInt": "1"},{"$numberInt": "2"}]`, bsontype.Array, "Array"),

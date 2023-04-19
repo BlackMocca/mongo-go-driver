@@ -12,7 +12,9 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"reflect"
 	"strings"
+	"time"
 
 	"go.mongodb.org/mongo-driver/bson/bsontype"
 )
@@ -415,6 +417,19 @@ func (ejp *extJSONParser) readValue(t bsontype.Type) (*extJSONValue, error) {
 				}
 				v = &extJSONValue{t: bsontype.EmbeddedDocument, v: &extJSONObject{keys: keys, values: vals}}
 			case jpsSawValue:
+				if reflect.TypeOf(ejp.v.v).Kind() == reflect.String {
+					layout := "2006-01-02T15:04:05.000Z"
+					datetime_str := ejp.v.v.(string)
+					dt, err := time.Parse(layout, datetime_str)
+					if err != nil {
+						return nil, invalidJSONError(fmt.Sprintf("can not parse in layout format '%s'", layout))
+					}
+					ejp.canonical = false
+					ejp.emptyObject = false
+					ejp.v.v = dt.UnixMilli()
+					v = ejp.v
+				}
+
 				if ejp.canonical {
 					return nil, invalidJSONError("{")
 				}
