@@ -420,17 +420,24 @@ func (ejp *extJSONParser) readValue(t bsontype.Type) (*extJSONValue, error) {
 			case jpsSawValue:
 				if reflect.TypeOf(ejp.v.v).Kind() == reflect.String {
 					layout := "2006-01-02T15:04:05.000Z"
+					layout_rfc3339 := "2006-01-02T15:04:05Z"
 					datetime_str := cast.ToString(ejp.v.v.(string))
-					dt, err := time.Parse(layout, datetime_str)
-					if err != nil {
-						return nil, invalidJSONError(fmt.Sprintf("can not parse in layout format '%s'", layout))
+					if dt, err := time.Parse(layout, datetime_str); err == nil {
+						ejp.canonical = false
+						ejp.emptyObject = false
+						ejp.v.t = bsontype.Int64
+						ejp.v.v = dt.UnixMilli()
+						v = ejp.v
+						break
 					}
-					ejp.canonical = false
-					ejp.emptyObject = false
-					ejp.v.t = bsontype.Int64
-					ejp.v.v = dt.UnixMilli()
-					v = ejp.v
-					break
+					if dt, err := time.Parse(layout_rfc3339, datetime_str); err == nil {
+						ejp.canonical = false
+						ejp.emptyObject = false
+						ejp.v.t = bsontype.Int64
+						ejp.v.v = dt.UnixMilli()
+						v = ejp.v
+						break
+					}
 				}
 
 				if ejp.canonical {
